@@ -1,9 +1,8 @@
 # utopiamusic
 Test for full-stack engineer at utopia music.
 
-# setup
-Make sure you have NPM installed.
-
-Clone repo.
-
-CD to repo directory. Run > npm run test
+# install
+- clone the project.
+- cd to the *project path*/test
+- run > npm install
+- run > npm test
