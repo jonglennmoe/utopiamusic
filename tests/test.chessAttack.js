@@ -2,7 +2,7 @@ import { canAttack } from '../src/chessAttack.js';
 import { assert } from 'chai';
 
 const positions = [
-    {a: ["C", 2], b: ["D", 4], canAttack: true},
+    {a: ["C", 2], b: ["F", 4], canAttack: true},
     {a: ["C", 2], b: ["A", 1], canAttack: true},
     {a: ["A", 6], b: ["B", 4], canAttack: true},
     {a: ["A", 6], b: ["B", 5]},
