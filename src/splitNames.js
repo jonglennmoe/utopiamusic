@@ -11,7 +11,7 @@ export const splitNames  = (namesArray) => {
         const lastName = nameParts[nameParts.length - 1] || null;
         nameParts.pop();
 
-        nameObj.middleNames = getMidleNames(nameParts);
+        nameObj.middleNames = getMiddleNames(nameParts);
         nameObj.lastName = lastName;
 
         result.push(nameObj);
@@ -19,7 +19,7 @@ export const splitNames  = (namesArray) => {
     return result;
 }
 
-const getMidleNames = (nameParts) => {
+const getMiddleNames = (nameParts) => {
     let middleNames = [];
     for (const middleName of nameParts) {
         middleNames.push(middleName);
