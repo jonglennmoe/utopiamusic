@@ -30,14 +30,11 @@ const expected = [
     { firstName: 'Ghandi' , middleNames: [], lastName: null }
 ];
 
-const validate = (namesObj) => {
-    describe('get correct names', function() {
-        namesObj.forEach((name, index) => {
-            it('Should match namesObj with the expected values', function() {
-                assert.deepEqual(namesObj, expected);
-            });
+describe('get correct names', function() {
+    const namesObj = splitNames(names);
+    namesObj.forEach((name, index) => {
+        it('Should match namesObj with the expected values', function() {
+            assert.deepEqual(namesObj, expected);
         });
     });
-};
-
-validate(splitNames(names));
+});

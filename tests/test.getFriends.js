@@ -36,14 +36,9 @@ const expected = [
   }
 ];
 
-const validate = () => {
-    describe('get correct user data', () => {
-        it('Should match friends with the expected values', async () => {
-            const result = await getResult();
-            assert.deepEqual(result, expected);
-        }).timeout(10000);
-    });
-};
-
-
-validate();
+  describe('get correct user data', () => {
+      it('Should match friends with the expected values', async () => {
+          const result = await getResult();
+          assert.deepEqual(result, expected);
+      }).timeout(0);
+  });

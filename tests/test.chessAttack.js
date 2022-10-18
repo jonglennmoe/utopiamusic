@@ -12,14 +12,10 @@ const positions = [
     {a: ["D", 4], b: ["E", 5]}
 ];
 
-const validate = () => {
-    describe('can attack', function () {
-        positions.forEach((test, index) => {
-            it('should have correct attack values when possible', function() {
-                assert.equal(canAttack(positions[index]), !!test.canAttack);
-            });
+describe('can attack', function () {
+    positions.forEach((test, index) => {
+        it('should have correct attack values when possible', function() {
+            assert.equal(canAttack(positions[index]), !!test.canAttack);
         });
     });
-}
-
-validate();
+});
